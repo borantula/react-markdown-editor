@@ -1,0 +1,17 @@
+.markdown-editing-view {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background: grey;
+}
+
+.markdown-editor {
+    width:50%;
+    padding: 5% 10%;
+}
+
+.markdown-viewer{
+    width:50%;
+    padding: 5% 10%;
+    background: #e5e5e5;
+}
