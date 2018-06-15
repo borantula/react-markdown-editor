@@ -5,9 +5,9 @@ import AboutPage from "./components/pages/AboutPage";
 import './App.css';
 
 
-const App = ()=><div className="App">
+const App = ()=><React.Fragment>
     <Route path="/" exact component={HomePage}/>
     <Route path="/about" exact component={AboutPage}/>
-</div>
+</React.Fragment>
 
 export default App;

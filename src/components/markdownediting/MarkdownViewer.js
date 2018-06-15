@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import showdown from 'showdown';
+import PropTypes from 'prop-types';
 
 class MarkdownViewer extends Component {
 
@@ -8,6 +9,11 @@ class MarkdownViewer extends Component {
 
         this.converter = new showdown.Converter({
             simplifiedAutoLink : true,
+            noHeaderId:true,
+            strikethrough:true,
+            tasklists:true,
+            simpleLineBreaks:true,
+            openLinksInNewWindow:true
         });
     }
 
@@ -18,6 +24,14 @@ class MarkdownViewer extends Component {
         return <div className={"markdown-viewer"} dangerouslySetInnerHTML={{ __html: htmlContent }}></div>
     }
 
+}
+
+MarkdownViewer.defaultProps = {
+    markdownText : ""
+}
+
+MarkdownViewer.propTypes = {
+    markdownText : PropTypes.string
 }
 
 export default MarkdownViewer;

@@ -1,8 +1,10 @@
 .markdown-editing-view {
     display: flex;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
+    height: 100%;
     background: grey;
+    letter-spacing: 0.5px;
 }
 
 .markdown-editor {
@@ -11,6 +13,7 @@
     background: #d5d5d5;
     transition: all 0.3s;
     border: 10px solid #666;
+    white-space: pre;
 }
 
 
