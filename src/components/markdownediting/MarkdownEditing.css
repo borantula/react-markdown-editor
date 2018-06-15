@@ -6,12 +6,17 @@
 }
 
 .markdown-editor {
-    width:50%;
-    padding: 5% 10%;
+    width: 50%;
+    padding: 3em 5em;
+    background: #d5d5d5;
+    transition: all 0.3s;
+    border: 10px solid #666;
 }
 
-.markdown-viewer{
-    width:50%;
-    padding: 5% 10%;
-    background: #e5e5e5;
+
+.markdown-viewer {
+    width: 50%;
+    padding: 3em 5em;
+    background: #f5f5f5;
+    transition: background-color 0.3s;
 }
