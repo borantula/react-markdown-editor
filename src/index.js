@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {BrowserRouter} from 'react-router-dom'
+import 'normalize.css';
 import './index.css';
+// import './assets/typebase.css';
 import App from './App';
 
 import registerServiceWorker from './registerServiceWorker';
