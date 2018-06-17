@@ -1,3 +1,7 @@
+.main-menu-container {
+    position: fixed;
+}
+
 .main-menu-container .main-menu__opener,
 .main-menu-container .main-menu__closer{
     position: fixed;

@@ -3,16 +3,24 @@ import PropTypes from "prop-types";
 
 class MarkdownEditor extends Component {
 
+    componentDidMount()
+    {
+        document.getElementById('markdown-editor').focus()
+    }
 
     render() {
 
-        return <div
+        return <div className="markdown-editor-container">
+            <div
+                id="markdown-editor"
             contentEditable
+            tabindex="1"
             ref={this.props.editor}
             className="markdown-editor"
             onKeyUpCapture={this.props.handleChange}
             dangerouslySetInnerHTML={{ __html: this.props.initialMarkdownText }}
         />
+        </div>
     }
 
 }

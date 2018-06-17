@@ -8,17 +8,40 @@
 }
 
 .markdown-editor {
-    width: 45%;
+    width: 100%;
+    height: 100%;
+    outline: 0;
+    /* These are technically the same, but use both */
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+
+    -ms-word-break: break-all;
+    /* This is the dangerous one in WebKit, as it breaks things wherever */
+    word-break: break-all;
+    /* Instead use this non-standard one: */
+    word-break: break-word;
+
+    /* Adds a hyphen where the word breaks, if supported (No Blink) */
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+    white-space: pre-wrap;
+    outline: 0;
+}
+
+.markdown-editor-container {
+    width: 50%;
     padding: 3em 5em;
     background: rgba(78, 88, 100, 1);
     color: white;
     transition: all 0.3s;
-    white-space: pre;
-    outline: 0;
+
+
 }
 
 .markdown-viewer {
-    width: 55%;
+    width: 50%;
     padding: 1em 5em;
     background: #E6E1DC;
     word-wrap: break-word;
