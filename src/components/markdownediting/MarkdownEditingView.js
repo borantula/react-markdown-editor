@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import localforage from "localforage";
 import MarkdownViewer from "./MarkdownViewer";
 import MarkdownEditor from "./MarkdownEditor";
+import MainMenu from "../mainmenu/MainMenu";
 import "./MarkdownEditing.css";
 
 /**
@@ -71,6 +72,7 @@ class MarkdownEditingView extends Component {
                             initialMarkdownText={this.state.initialMarkdownText}
             />
             <MarkdownViewer markdownText={this.state.markdownText}/>
+            <MainMenu/>
         </div>
     }
 
