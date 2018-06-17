@@ -21,7 +21,9 @@ class MarkdownViewer extends Component {
 
         const htmlContent = this.converter.makeHtml(this.props.markdownText);
 
-        return <div className={"markdown-viewer"} dangerouslySetInnerHTML={{ __html: htmlContent }}></div>
+        return <div className={"markdown-viewer"} >
+            <div className="markdown-viewer__content" dangerouslySetInnerHTML={{ __html: htmlContent }}></div>
+        </div>
     }
 
 }

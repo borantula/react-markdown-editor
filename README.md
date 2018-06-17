@@ -11,3 +11,5 @@
 - [] Make available offline
 - [] Write tests
 - [] Helper on the page for markdown etc
+- [] menu page
+- [] about page
