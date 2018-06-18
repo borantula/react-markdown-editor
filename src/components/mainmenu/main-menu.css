@@ -17,8 +17,8 @@
     background:rgba(0,0,0,0.1);
     right: 0;
     top: 0;
-    transition: 0.5s all;
-    visibility: hidden;
+    transition: 0.3s all ease-in-out;
+    border-radius: 0 0 0 50%;
 }
 
 .main-menu-container.main-menu-container--is-open .main-menu{
@@ -26,10 +26,19 @@
     width: 100vw;
     height: 100vh;
     background: white;
-    transition: 0.3s all;
-    visibility: visible;
+    transition: 0.2s all ease-in-out;
+    border-radius: 0 0 0 0;
+
 }
 
-.main-menu-container.main-menu-container--is-open .main-menu-container .main-menu__opener{
+.main-menu-container.main-menu-container--is-open .main-menu__opener{
     display:none;
+}
+
+.main-menu-container .main-menu__closer{
+    display:none;
+}
+
+.main-menu-container.main-menu-container--is-open .main-menu__closer{
+    display:inline-block;
 }
