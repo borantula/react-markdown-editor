@@ -88,7 +88,7 @@ class MarkdownEditingView extends Component {
     }
 
     render() {
-        return <div className={"markdown-editing-view"}>
+        return <div className="markdown-editing-view">
             <MarkdownEditor editor={this.editor}
                             handleChange={this.handleChange}
                             initialText={this.state.initialMarkdownText}
