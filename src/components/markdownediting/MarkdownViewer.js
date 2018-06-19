@@ -24,8 +24,8 @@ class MarkdownViewer extends Component {
         return <div className={"markdown-viewer"} >
             <div className="markdown-viewer__content" dangerouslySetInnerHTML={{ __html: this.props.htmlContent }}></div>
             <div className="markdown-viewer__actions">
-                <a href="#" onClick={this.saveAsTxt}>download as txt</a>
-                <a href="#" onClick={this.saveAsHtml}>download as html</a>
+                <a onClick={this.saveAsTxt}>download as txt</a>
+                <a onClick={this.saveAsHtml}>download as html</a>
             </div>
         </div>
     }

@@ -14,3 +14,4 @@
 - [] Helper on the page for markdown etc
 - [] menu page
 - [] about page
+- [] shortcut keys for lists code block etc like alt+l alt+c
