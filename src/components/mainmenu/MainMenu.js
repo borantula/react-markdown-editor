@@ -7,22 +7,17 @@ class MainMenu extends Component {
         super(props);
 
         this.state = {
-            isOpen:false
+            isOpen: false
         }
-    
-    }
 
-    componentDidMount()
-    {
-        document.title = 'Minimalistic markdown editor';
     }
 
     /**
      * Toggles the isOpen status to it's current opposite
      */
-    toggle = ()=>{
+    toggle = () => {
         this.setState({
-            isOpen:!this.state.isOpen
+            isOpen: !this.state.isOpen
         })
     }
 
@@ -31,8 +26,8 @@ class MainMenu extends Component {
 
         let containerClasses = "main-menu-container";
 
-        if(true === this.state.isOpen) {
-            containerClasses +=" main-menu-container--is-open";
+        if (this.state.isOpen === true) {
+            containerClasses += " main-menu-container--is-open";
         }
 
 

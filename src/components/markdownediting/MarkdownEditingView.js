@@ -73,7 +73,6 @@ class MarkdownEditingView extends Component {
     saveToLocalStorage() {
         localforage.setItem(this.LOCAL_STORAGE_KEY, this.state.markdownText).then((value) => {
             // Do other things once the value has been saved.
-            //console.log('saved', value);
         }).catch((err) => {
             // This code runs if there were any errors
             console.log('error setting', err);
@@ -95,7 +94,9 @@ class MarkdownEditingView extends Component {
                             initialText={this.state.initialMarkdownText}
                             initialMarkdownText={this.state.initialMarkdownText}
             />
-            <MarkdownViewer markdownText={this.state.markdownText} htmlContent={this.state.htmlContent}/>
+            <MarkdownViewer markdownText={this.state.markdownText}
+                            htmlContent={this.state.htmlContent}
+            />
             <MainMenu/>
         </div>
     }
