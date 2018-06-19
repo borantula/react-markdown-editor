@@ -10,11 +10,12 @@ class MarkdownEditor extends Component {
 
     render() {
 
+
         return <div className="markdown-editor-container">
             <div
                 id="markdown-editor"
             contentEditable
-            tabindex="1"
+            tabIndex="1"
             ref={this.props.editor}
             className="markdown-editor"
             onKeyUpCapture={this.props.handleChange}
@@ -32,7 +33,7 @@ MarkdownEditor.defaultProps = {
 MarkdownEditor.propTypes = {
     initialMarkdownText : PropTypes.string,
     handleChange: PropTypes.func.isRequired,
-    editor: PropTypes.any.isRequired
+    editor: PropTypes.object.isRequired
 }
 
 export default MarkdownEditor;

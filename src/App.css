@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Lora:400,700|PT+Mono&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400|Lora:400,700|PT+Mono&subset=latin-ext');
 
 body {
-    font-family: 'Lora',Georgia,"Times New Roman", sans-serif;
+    font-family: 'Lora',Georgia,"Times New Roman", serif;
     font-size: 18px;
     line-height: 1.5;
     font-weight: 400;

@@ -7,8 +7,9 @@
 - [] Export to pdf
 - [] Export to html
 - [] Export to txt from markdown version
+- [] inserting image (as base64 so no uploading)
 - [] Send via email
-- [] Make available offline
+- [x] Make available offline
 - [] Write tests
 - [] Helper on the page for markdown etc
 - [] menu page

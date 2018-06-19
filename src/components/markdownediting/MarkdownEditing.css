@@ -27,7 +27,10 @@
     -webkit-hyphens: auto;
     hyphens: auto;
     white-space: pre-wrap;
-    outline: 0;
+    outline: none;
+    cursor: text;
+    direction: ltr;
+
 }
 
 .markdown-editor-container {

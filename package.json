@@ -18,7 +18,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "deploy": "yarn build;aws s3 sync --acl public-read --sse --delete build/ s3://mywebhostingtest"
+    "deploy": "yarn build;aws s3 sync --acl public-read --sse --delete build/ s3://mywebhostingtest;yarn run invalidate_cloudfront",
+    "invalidate_cloudfront":"aws cloudfront create-invalidation --distribution-id E3B52UGO0R7891 --paths '/*'"
   },
   "devDependencies": {
     "eslint": "^4.19.1",

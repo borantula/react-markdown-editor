@@ -12,6 +12,11 @@ class MainMenu extends Component {
     
     }
 
+    componentDidMount()
+    {
+        document.title = 'Minimalistic markdown editor';
+    }
+
     /**
      * Toggles the isOpen status to it's current opposite
      */
