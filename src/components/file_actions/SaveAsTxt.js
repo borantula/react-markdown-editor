@@ -11,7 +11,7 @@ class SaveAsTxt extends Component {
 
     render() {
         return <div className="download-as-html">
-            <button onClick={this.save}>txt</button>
+            <button className="save-as-btn" onClick={this.save}>txt</button>
         </div>
     }
 

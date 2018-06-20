@@ -11,7 +11,7 @@ class SaveAsHtml extends Component {
 
     render() {
         return <div className="download-as-html">
-            <button onClick={this.save}>html</button>
+            <button className="save-as-btn" onClick={this.save}>html</button>
         </div>
     }
 

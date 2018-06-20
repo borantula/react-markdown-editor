@@ -5,6 +5,8 @@ import MarkdownViewer from "./MarkdownViewer";
 import MarkdownEditor from "./MarkdownEditor";
 import MainMenu from "../mainmenu/MainMenu";
 import "./MarkdownEditing.css";
+import SaveAsTxt from "../file_actions/SaveAsTxt";
+import SaveAsHtml from "../file_actions/SaveAsHtml";
 
 /**
  * HOC for editing view
@@ -97,6 +99,10 @@ class MarkdownEditingView extends Component {
                             htmlContent={this.state.htmlContent}
             />
             <MainMenu/>
+            <div className="markdown-viewer__actions">
+                <SaveAsTxt content={this.props.markdownText}/>
+                <SaveAsHtml content={this.props.htmlContent}/>
+            </div>
         </div>
     }
 

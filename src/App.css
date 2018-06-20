@@ -7,3 +7,13 @@ body {
     font-weight: 400;
     letter-spacing: 1px;
 }
+
+.save-as-btn {
+    background: none;
+    border: 0;
+    cursor: pointer;
+}
+
+.save-as-btn:hover {
+    color:#999;
+}
