@@ -14,3 +14,5 @@
 - [] Helper on the page for markdown etc
 - [] menu page
 - [] about page
+- [] shortcut keys for lists code block etc like alt+l alt+c
+- [] check if there is more than one window open (if it can be done)

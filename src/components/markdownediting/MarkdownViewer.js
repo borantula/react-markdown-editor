@@ -1,44 +1,24 @@
-import React, {Component} from 'react';
-
+import React from 'react';
 import PropTypes from 'prop-types';
-import FileSaver from 'file-saver';
+import SaveAsHtml from "../file_actions/SaveAsHtml";
+import SaveAsTxt from "../file_actions/SaveAsTxt";
 
-class MarkdownViewer extends Component {
+const MarkdownViewer = (props) => <div className="markdown-viewer">
+    <div className="markdown-viewer__content" dangerouslySetInnerHTML={{__html: props.htmlContent}}/>
+    <div className="markdown-viewer__actions">
+        <SaveAsTxt content={props.markdownText}/>
+        <SaveAsHtml content={props.htmlContent}/>
+    </div>
+</div>
 
-    //TODO move to a component
-    saveAsTxt = ()=>
-    {
-        const blob = new Blob([this.props.markdownText], {type: "text/plain;charset=utf-8"});
-        FileSaver.saveAs(blob, "notes.txt");
-    }
-
-    //TODO move to a component
-    saveAsHtml = ()=>
-    {
-        const blob = new Blob([this.props.htmlContent], {type: "text/plain;charset=utf-8"});
-        FileSaver.saveAs(blob, "notes.html");
-    }
-
-    render() {
-
-        return <div className={"markdown-viewer"} >
-            <div className="markdown-viewer__content" dangerouslySetInnerHTML={{ __html: this.props.htmlContent }}></div>
-            <div className="markdown-viewer__actions">
-                <a onClick={this.saveAsTxt}>txt</a>
-                <a onClick={this.saveAsHtml}>html</a>
-            </div>
-        </div>
-    }
-
-}
 
 MarkdownViewer.defaultProps = {
-    markdownText : "",
-    htmlContent:""
+    markdownText: "",
+    htmlContent: ""
 }
 
 MarkdownViewer.propTypes = {
-    markdownText : PropTypes.string,
+    markdownText: PropTypes.string,
     htmlContent: PropTypes.string,
 }
 

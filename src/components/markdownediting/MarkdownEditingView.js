@@ -49,10 +49,11 @@ class MarkdownEditingView extends Component {
         localforage.getItem(this.LOCAL_STORAGE_KEY).then((value) => {
             this.setState({
                 initialMarkdownText: value,
-                markdownText: value
+                markdownText: value,
+                htmlContent:this.convertToHtml(value)
             });
 
-            this.convertToHtml(this.state.markdownText);
+
         }).catch((err) => {
             // This code runs if there were any errors
             console.log('error getting', err);
@@ -61,11 +62,12 @@ class MarkdownEditingView extends Component {
     }
 
     handleChange = () => {
+        const markdownText = this.editor.current.innerText;
         this.setState({
-            markdownText: this.editor.current.innerText
+            markdownText,
+            htmlContent:this.convertToHtml(markdownText)
         });
 
-        this.convertToHtml(this.state.markdownText);
 
         this.saveToLocalStorage();
     }
@@ -81,10 +83,7 @@ class MarkdownEditingView extends Component {
 
     convertToHtml(markdownText)
     {
-        const htmlContent = this.converter.makeHtml(markdownText);
-        this.setState({
-            htmlContent
-        })
+        return this.converter.makeHtml(markdownText);
     }
 
     render() {
