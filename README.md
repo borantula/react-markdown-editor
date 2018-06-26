@@ -1,4 +1,5 @@
-# Simple markdown note app build with React
+# Markdown note app with local saving and export build with React
+[DEMO: editor.borayalcin.me](https://editor.borayalcin.me/)
 
 ###TODO
 - [x] Save to local storage
