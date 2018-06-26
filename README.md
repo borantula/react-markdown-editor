@@ -1,4 +1,6 @@
 # Markdown note app with local saving and export build with React
+
+See working demo with bunch of ideas to code :)
 [DEMO: editor.borayalcin.me](https://editor.borayalcin.me/)
 
 ###TODO
