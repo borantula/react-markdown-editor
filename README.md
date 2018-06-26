@@ -3,7 +3,7 @@
 See working demo with bunch of ideas to code :)
 [DEMO: editor.borayalcin.me](https://editor.borayalcin.me/)
 
-###TODO
+### TODO
 - [x] Save to local storage
 - [ ] Nicer interface and colors for editor area. Borders are ugly now.
 - [ ] Save to browser with different names
